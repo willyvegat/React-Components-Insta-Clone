@@ -28,7 +28,7 @@ const App = () => {
 
       Invoke `setPosts` and pass as the new state the invocation of `posts.map`.
       The callback passed into `map` performs the following logic:
-        - if the `id` of the post matches `postId`, return a new post object with the desired values (use the spread operator).
+        - if the `id` of the post matches `postId`, return a new post object with the desired values (use the spread operator).` 
         - otherwise just return the post object unchanged.
      */
   };
@@ -36,7 +36,8 @@ const App = () => {
   return (
     <div className='App'>
       {/* Add SearchBar and Posts here to render them */}
-    
+      <SearchBar />
+      <Posts likePost={likePost} posts={posts} />
       {/* Check the implementation of each component, to see what props they require, if any! */}
     </div>
   );
